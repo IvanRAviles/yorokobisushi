@@ -1,0 +1,47 @@
+SECTION TYPE: ROLLOS HORNEADOS
+
+ITEMS IN SECTION:
+
+PLATE NAME: DUQUESA ROLL
+WARNING: PRECIO VARIA SEGUN EMPANIZADO O NATURAL 
+PRICE FOR EMPANIZADO: $219 
+PRICE FOR NATURAL: $209
+INGREDIENTS: Pepino, aguacate, philadelphia y camarón
+empanizado por dentro arriba toping de
+kanicama, atun, masago, camarón y tempura
+
+PLATE NAME: CARNÍVORO
+WARNING: PRECIO VARIA SEGUN EMPANIZADO O NATURAL
+PRICE FOR EMPANIZADO: $205 
+PRICE FOR NATURAL: $195
+INGREDIENTS: Pepino, aguacate, philadelphia Res y
+Pollo adentro, por fuera Topping de Res,
+pollo y tocino
+
+PLATE NAME: SUSHINGÓN
+WARNING: PRECIO VARIA SEGUN EMPANIZADO O NATURAL
+PRICE FOR EMPANIZADO: $200 
+PRICE FOR NATURAL: $195
+INGREDIENTS: Pepino, aguacate, Philadelfia salmón adentro
+por fuera topping de camaron y pulpo
+
+PLATE NAME: SUSHIKOBI
+WARNING: PRECIO VARIA SEGUN EMPANIZADO O NATURAL
+PRICE FOR EMPANIZADO: $195 
+PRICE FOR NATURAL: $185
+INGREDIENTS: Pepino, Aguacate, Philadelfia, Pollo y
+Tocino adentro por fuera Topping
+de Res y Tocino
+
+PLATE NAME: SAMY ROLL
+WARNING: PRECIO VARIA SEGUN EMPANIZADO O NATURAL
+PRICE FOR EMPANIZADO: $190 
+PRICE FOR NATURAL: $180
+INGREDIENTS: Pepino, aguacate, Philadelfia Camaron
+y surimi adentro por fuera topping de
+cangrejo y masago
+
+PLATE NAME: CHILES KOBI
+PRICE: $199
+INGREDIENTS: PROTEINA A ELEJIR, Rellenos de Philadelfia, chihuahua, Tampico, por fuera toping
+de res y tocino

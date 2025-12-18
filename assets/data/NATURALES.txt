@@ -1,0 +1,89 @@
+SECTION TYPE: NATURALES
+
+WARNING: *TODOS LOS ROLLOS PUEDEN SER EMPANIZADOS POR COSTO EXTRA*
+
+ITEMS IN SECTION:
+
+PLATE NAME: CALIFORNIA ROLL
+PRICE FOR NATURAL: $110 
+INGREDIENTS:Pepino, aguacate, Philadelfia Ingrediente a
+escoger por dentro Res, Pollo o Camarón.
+
+PLATE NAME: CHICKEN ROLL
+PRICE FOR NATURAL: $129
+INGREDIENTS: Pepino, aguacate, Philadelfia , pollo
+empanizado por dentro, por fuera
+forrado de philadelphia y aguacale.
+
+PLATE NAME: LA GUERRA
+PRICE FOR NATURAL: $135
+INGREDIENTS: Pepino, aguacate, Philadelfia camarón
+empanizado adentro afuera philadelphia,
+camarón, aguacate y tampico,
+
+PLATE NAME: ARCOIRIS
+PRICE FOR NATURAL: $159
+INGREDIENTS: Pepino, aguacate, Philadelfia ingrediente a
+escoger por dentro por fuera aguacate, salmón,
+pulpo y camaron
+
+PLATE NAME: AGUACHILE ROLL
+PRICE FOR NATURAL: $185
+INGREDIENTS: Pepino, aguacate, Philadelfia camaron
+y pulpo adentro por fuera chile en polvo
+acompanado de jugo de aguachile
+
+PLATE NAME :PLATILLO VEGAN EL VEGETARIANO
+PRICE FOR NATURAL: $100
+INGREDIENTS: Pepino, aguacate, Philadelfia zanahoria
+por fuera y ajonjoli.
+
+PLATE NAME: ABOCADO
+PRICE FOR NATURAL: $130
+INGREDIENTS: Pepino, aguacate, Philadelfia camarón
+por dentro y aguacate por fuera.
+
+
+PLATE NAME: TUNA ROLL
+PRICE FOR NATURAL: $175
+INGREDIENTS:Pepino, Aguacate, Philadelphia y tampico
+adentro por fuera forrado en philadelphia,
+medallon de atun y aguacate
+
+PLATE NAME: YORO ROLL
+PRICE FOR NATURAL: $165
+INGREDIENTS: Pepino, aguacate, Philadelfia y surimi, por
+dentro camarón empanizado, arriba
+banado en chipotle y anguila
+
+PLATE NAME: GUAMUCHILITO
+PRICE FOR NATURAL: $140
+INGREDIENTS: Pepino, aguacate, Philadelfia cangrejo
+adentro por fuera camarón, Tampico, aguacale
+y salsa de angulla
+
+PLATE NAME: DURAZNITO ROLL
+PRICE FOR NATURAL: $160
+INGREDIENTS: Pepino, aguacate, Philadelfia, Durazno y Surimi
+por dentro, arriba Philadefia, durazno bañado
+en salsa dulce especial.
+
+PLATE NAME: OCEAN ROLL
+PRICE FOR NATURAL: $155
+INGREDIENTS: Pepino, aguacate, Philadelfia camarón empanizado
+por dentro por fuera forrado en Tampico y aguacate
+
+PLATE NAME: SALMÓN
+PRICE FOR NATURAL: $175
+INGREDIENTS: Pepino, aguacate, Philadelfia salmón adentro por
+fuera Philadelphia y salmon
+
+PLATE NAME: CACHANILLA ROLL
+PRICE FOR NATURAL: $185
+INGREDIENTS: Pepino, Aguacate, Philadelphia, tampico spicy, camaron
+empanizado adentro por fuera forrado en philadelphia,
+salmón, medallón de atún, aguacate y toping de tempura
+bañado en chipotle y anguila
+
+
+

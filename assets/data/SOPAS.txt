@@ -1,0 +1,13 @@
+SECTION TYPE: SOPAS
+
+ITEMS IN SECTION:
+
+PLATE NAME: MISOSHIRO
+PRICE: $99
+INGREDIENTS: Sopa de miso, soya, cebollín,
+alga y queso de soya.
+
+PLATE NAME: RAMEN MISO
+PRICE: $110
+INGREDIENTS: Ramen, Siracha, Sopa de miso, soya,
+cebollin, alga y queso de soya.

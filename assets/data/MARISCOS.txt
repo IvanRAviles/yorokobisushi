@@ -1,0 +1,32 @@
+SECTION: MARISCOS
+
+ITEMS IN SECTION:
+
+PLATE NAME: NIGIRI SUSHI
+WARNING: PRECIO VARIA SEGUN PIEZAS QUE ELIJA
+PRICE FOR 2pz:$90
+PRICE FOR 4pz: $130
+INGREDIENTS: Proteína a escoger salmón, atún, camarón,
+kanicama, masago y pulpo
+
+PLATE NAME: TOSTADA DE MEDALLÓN DE ATÙN
+PRICE:$175
+INGREDIENTS: Atún, aguacate y pepino, montado
+en tostada
+
+PLATE NAME: SASHIMI
+PRICE: $205
+INGREDIENTS: Láminas de medallón de atún o salmón, bañada en
+salsa de soya especial con serrano
+
+
+PLATE NAME: TOSTADA ESPECIAL
+PRICE: $135
+INGREDIENTS: Camarón cocido, pulpo, pepino, aguacate
+montada en tostada
+
+PLATE NAME: TOSTADA SINALOA
+PRICE: $205
+INGREDIENTS: Camaron cocido, medallón de atún, pulpo,
+aguacate, pepino bañado en salda negra y
+montado en tostada con chipotle.

@@ -1,0 +1,85 @@
+SECTION TYPE: ESPECIALES DE LA CASA
+
+WARNING FOR ALL PLATES: *CUALQUIER PLATILLO NATURAL PUEDE SER EMPANIZADO POR COSTO EXTRA*
+
+ 
+ITEMS IN SECTION:
+
+PLATE NAME: JR ROLL
+PRICE: $160
+INGREDIENTS: Pepino, aguacate, Philadelfia Ingrediente
+a escoger por dentro por fuera gratinado
+de 3 quesos, chipotle y lluvia de tocino
+
+PLATE NAME: CARINOSO
+PRICE: $170
+INGREDIENTS: Pepino, aguacate, Philadelfia, res, pollo y
+camarón por dentro por fuera gratinado de
+3 quesos y chile serrano
+
+PLATE NAME: MELI ROLL
+PRICE: $175
+INGREDIENTS: Pepino, aguacate, Philadelfia ingrediente a
+elegir por dentro por fuera tampico, aguacate
+banado en chipotle y salsa de anguila
+
+PLATE NAME: CHICKEN KOBI
+PRICE FOR Natural: $175 
+INGREDIENTS: Pepino, aguacate, Philadelfia y pollo empanizado
+adentro por fuera forrado en philadelphia y
+aguacate toping de tocino y tempura bañado
+en chipotle y anguila
+
+PLATE NAME: CHACALOZO
+PRICE FOR EMPANIZADO: $185 
+PRICE FOR NATURAL: $175
+INGREDIENTS: Pepino, Aguacate, Philadelphia y pollo
+empanizado adentro por uera philadelphia,
+serrano y toping de tocino banado en
+chipotle y anguila FLAMEADO
+
+PLATE NAME: YIN YANG ROLL
+PRICE FOR Empanizado: $180
+INGREDIENTS: Pepino, aguacate, Philadelphia, pollo
+y res por dentro por fuera gratinado
+de 3 quesos, tampico yin yang
+
+PLATE NAME: FAMOSO ROLL
+PRICE FOR Empanizado: $185
+INGREDIENTS: Pepino, aguacate, philadelphia, camarón
+y tocino por dentro, por fuera kanikama
+spicy, gratinado de queso, chipotle y anguila.
+
+PLATE NAME: CARINOSO ESPECIAL
+PRICE FOR Empanizado: $180
+INGREDIENTS: Pepino, aguacate, Philadelfia, res, pollo, y camarón
+por dentro por fuera gratinado de 3 quesos con chile
+serrano y coronado con pollo empanizado y tocino
+
+PLATE NAME: 3 CHILES
+PRICE FOR Empanizado: $180
+INGREDIENTS: Pepino, aguacate, res, y chile guerito por
+dentro y por fuera gratinado 3 quesos con chile
+serrano y toping de chipotle flameado
+
+PLATE NAME: CENTINELA
+PRICE FOR EMPANIZADO: $215
+PRICE FOR NATURAL: $205
+INGREDIENTS: Pepino, aguacate, philadelphia y atún por
+dentro, aguacate por fuera por fuera
+canikama spicy, Camarón empanizado,
+coronado de philadelphia y masago, banado
+en anguila
+
+PLATE NAME: LOCOCHON
+PRICE FOR Empanizado: $155
+INGREDIENTS: Pepino, aguacate, Philadelfia, res, tocino
+y chile toreado por dentro por fuera
+3 quesos y surimi
+
+PLATE NAME: CHILI ROLL
+PRICE FOR Empanizado: $165
+INGREDIENTS: Pepino, aguacate, Philadelphia, tampico,
+chile toreado y cebolla asada por dentro
+por fuera tempura, tocino y serrano
+bañado en chipotle.

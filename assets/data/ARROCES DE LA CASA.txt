@@ -1,0 +1,70 @@
+SECTION TYPE:    ARROCES DE LA CASA
+
+ITEMS IN THIS SECTION:
+
+PLATE NAME: BOMBA ESPECIAL
+PRICE: $169
+INGREDIENTS: Bola de arroz revuelta con un poco de todo, 
+toping de tampico con aguacate banado en
+chipotle y anguila
+
+PLATE NAME: GOHAN
+PRICE: $110
+INGREDIENTS: Arroz, Philadelfia Tampico, aguacate,
+y salsa de anguila
+
+PLATE NAME: YAKIMESHI
+WARNING: *PRECIOS VARIAN SEGUN TAMANO*
+PRICE FOR GRANDE: $115
+PRICE FOR CHICO: $80
+INGREDIENTS: Arroz frito, zanahoria, calabaza y apio
+
+PLATE NAME: BOMBA
+PRICE: $140
+INGREDIENTS: De todo un poco
+
+PLATE NAME: CULICHI
+WARNING:*PRECIOS VARIAN SEGUN TAMANO*
+PRICE FOR GRANDE: $180
+PRICE FOR CHICO: $140
+INGREDIENTS: Cama de arroz yakimeshi, philadelphia,
+aguacate en cuadrito, tampico, camarón
+empanizado bañado en chipotle de anguila
+
+PLATE NAME: SINALOENSE
+PRICE: $185
+INGREDIENTS: Cama de arroz yakimeshi, philadelphia,
+agucate, tampico especial, tocino, pollo
+empanizado y bañado en anguila
+
+PLATE NAME: TERIYAKI DEL CHEF
+WARNING: *PRECIOS VARIAN SEGUN TAMANO*
+PRICE FOR GRANDE: $180
+PRICE FOR CHICO: $145
+INGREDIENTS: Cama de arroz yakimeshi, arriba pollo,
+res y tocino a la plancha en salsa teriyaki
+
+PLATE NAME: GOHAN ESPECIAL
+PRICE: $155
+INGREDIENTS: Arroz, Philadelfia Tampico, aguacate,
+salsa de anguila y carne
+
+PLATE NAME: YAKIMESHI ESPECIAL
+WARNING:*PRECIOS VARIAN SEGUN TAMANO*
+PRICE FOR GRANDE: $145
+PRICE FOR CHICO: $125
+INGREDIENTS: Arroz yakimeshi, Tampico, Philadelfia,
+aguacate y salsa de anguila
+
+PLATE NAME: GOHAN HORNEADO
+PRICE: $199
+INGREDIENTS: Cama de arroz blanco, Res y Pollo, queso chihuahua,
+otra cama de arroz blanco y toping de camaron
+y tampico.
+
+
+PLATE NAME: SENSEI
+PRICE: $180
+INGREDIENTS:Cama de arroz yakimeshi, philadelphia,
+aguacate, proporción de pollo, res y
+camarón empanizado banado en águila

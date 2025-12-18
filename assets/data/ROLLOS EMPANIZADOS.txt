@@ -1,0 +1,71 @@
+SECTION TYPE: ROLLOS EMPANIZADOS
+
+WARNING: *CUALQUIER ROLLO PUEDE HACERSE NATURAL SI SE DESEA*
+
+ITEMS IN SECTION:
+
+PLATE NAME: MAR Y TIERRA
+PRICE: $125
+INGREDIENTS: Pepino, aguacate, Philadelfia res y
+camarón por dentro
+
+PLATE NAME: DOS QUESOS
+PRICE: $135
+INGREDIENTS: Pepino, aguacate, Philadelfla res camarón
+por dentro por fuera 2 quesos
+
+PLATE NAME: CIELO MAR Y TIERRA
+PRICE: $130
+INGREDIENTS: Pepino, aguacate, Phlladelfia res, pollo y
+camarón por dentro
+
+PLATE NAME: TRES QUESOS
+PRICE: $135
+INGREDIENTS: Pepino, aguacate, Philadelfia Ingredlente a
+escoger por dentro por fuera 3 quesos
+
+PLATE NAME: CORDON BLUE
+PRICE: $130
+INGREDIENTS: Pepino, aguacate, Philadelfia, pollo y
+tocino por dentro por fuera 2 quesos
+
+PLATE NAME: PALOMAZO
+PRICE: $145
+INGREDIENTS: Pepino, aguacate, Philadelfia, res tocino por
+dentro por fuera 2 quesos y chile serrano
+
+PLATE NAME: OMAR ROLL
+PRICE: $155
+INGREDIENTS: Pepino, Aguacate, Philadelfia, Res, Tocino
+Y Chile Toriado por dentro por fuera
+2 Quesos Y Camarón
+
+PLATE NAME: CORONADO
+PRICE: $155
+INGREDIENTS: Pepino, aguacate, Philadelfia, ingrediente a escoger por
+dentro por fuera Tampico y camarón empanizado
+
+PLATE NAME: H ROLL
+PRICE: $170
+INGREDIENTS: Pepino, aguacate, Philadelfia y surimi
+empanizado por dentro por fuera aguacate,
+Philadelfia y toping especial de tampico
+
+PLATE NAME: SILVIA ESPECIAL
+PRICE: $145
+INGREDIENTS: Pepino, aguacate, Philadelfia, camarón por
+dentro por fuera 2 quesos camarón y Tampico
+
+PLATE NAME: CAMARÓN BLUE
+PRICE: $145
+INGREDIENTS: Pepino, Aguacate, Philadelphia, camaron
+y tocino adentro por fuera 2 quesos dentro
+del empanizado
+
+PLATE NAME: CHINO ROLL
+PRICE: $180
+INGREDIENTS: Pepino, aguacate, Philadelfia, ingrediente
+a escoger forrado en chile toreado
+empanizado por fuera surimi empanizado
+bañado en salsa de anguila
+
