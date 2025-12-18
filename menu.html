@@ -29,24 +29,44 @@
       color:var(--text);
     }
 
-    .top{
-      display:flex; align-items:center; gap:14px;
-      padding:16px 18px;
-      border-bottom:1px solid var(--line);
-      background: rgba(0,0,0,.22);
-      backdrop-filter: blur(10px);
-    }
-    .logoBox img{width:46px; height:46px; object-fit:contain}
-    .brand h1{margin:0; font-size:26px; line-height:1.1}
-    .brand .sub{margin-top:4px; color:var(--muted); font-size:13px}
-    .hero{
-      margin-top:18px;
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding:18px;
-    }
+/* --- HEADER (MATCH INDEX) --- */
+.topBar{
+  padding:16px 18px;
+  border-bottom:1px solid var(--line);
+  background: rgba(0,0,0,.22);
+  backdrop-filter: blur(10px);
+}
+
+.brandRow{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logoBox{
+  width:54px;
+  height:54px;
+  border-radius:14px;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  flex:0 0 auto;
+}
+
+.logoBox img{
+  width:46px;
+  height:46px;
+  object-fit:contain;
+  display:block;
+}
+
+.brandText{ display:flex; flex-direction:column; }
+.brandName{ font-size:26px; font-weight:800; line-height:1.1; }
+.brandSub{ margin-top:4px; color:var(--muted); font-size:13px; }
+
 
 
 
@@ -186,15 +206,16 @@
 <header class="topBar">
   <div class="brandRow">
     <div class="logoBox">
-  <img src="assets/logo-mark.png" alt="Yorokobi Sushi">
-</div>
-
+      <img src="assets/logo-mark.png" alt="Yorokobi Sushi">
+    </div>
     <div class="brandText">
       <div class="brandName">Yorokobi Sushi</div>
       <div class="brandSub">Desde 2017</div>
     </div>
   </div>
 </header>
+
+
 
 
     </div>
@@ -418,6 +439,7 @@ const LOCATIONS = [
 
 </body>
 </html>
+
 
 
 
