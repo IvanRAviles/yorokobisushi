@@ -36,26 +36,17 @@
       background: rgba(0,0,0,.22);
       backdrop-filter: blur(10px);
     }
-.logoBox{
-  width:40px;
-  height:40px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-shrink:0;
-}
-
-.logoBox img{
-  width:40px;
-  height:40px;
-  object-fit:contain;
-}
-    .logoMark{
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  display: block;
-}
+    .logoBox img{width:46px; height:46px; object-fit:contain}
+    .brand h1{margin:0; font-size:26px; line-height:1.1}
+    .brand .sub{margin-top:4px; color:var(--muted); font-size:13px}
+    .hero{
+      margin-top:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
 
 
 
@@ -194,7 +185,10 @@
 
 <header class="topBar">
   <div class="brandRow">
-    <img class="logoMark" src="assets/logo-mark.png" alt="Yorokobi Sushi">
+    <div class="logoBox">
+  <img src="assets/logo-mark.png" alt="Yorokobi Sushi">
+</div>
+
     <div class="brandText">
       <div class="brandName">Yorokobi Sushi</div>
       <div class="brandSub">Desde 2017</div>
@@ -424,6 +418,7 @@ const LOCATIONS = [
 
 </body>
 </html>
+
 
 
 
