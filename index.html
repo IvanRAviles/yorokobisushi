@@ -82,19 +82,56 @@
       color:var(--text);
     }
     .note{color:var(--muted); font-size:13px; margin-top:10px; line-height:1.5}
+    .topBar {
+  display: flex;
+  align-items: center;
+  padding: 18px 22px;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logoMark {
+  width: 46px;
+  height: 46px;
+  display: block;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brandName {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.brandSub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <div class="logoBox">
-        <img src="assets/logo.png" alt="Yorokobi Sushi Logo">
-      </div>
-      <div class="brand">
-        <h1>Yorokobi Sushi</h1>
-        <div class="sub">Desde 2017</div>
-      </div>
-    </header>
+    <header class="topBar">
+  <div class="brandRow">
+    <img class="logoMark" src="assets/logo-mark.png" alt="Yorokobi Sushi">
+    <div class="brandText">
+      <div class="brandName">Yorokobi Sushi</div>
+      <div class="brandSub">Desde 2017</div>
+    </div>
+  </div>
+</header>
+
 
     <div class="hero">
       <a class="btn" href="menu.html">Ver Menú</a>
@@ -112,3 +149,4 @@
   </div>
 </body>
 </html>
+
