@@ -65,7 +65,7 @@
       "id": "mariscos",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "",
           "id": "items-in-section"
         },
         {
@@ -105,7 +105,7 @@
       "id": "naturales",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "",
           "id": "items-in-section"
         },
         {
@@ -262,7 +262,7 @@
       "id": "rollos-horneados",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "",
           "id": "items-in-section"
         },
         {
@@ -440,7 +440,7 @@
       "id": "especiales-de-la-casa",
       "items": [
         {
-          "name": "WARNING FOR ALL PLATES: *CUALQUIER PLATILLO NATURAL PUEDE SER EMPANIZADO POR COSTO EXTRA*",
+          "name": "*CUALQUIER PLATILLO NATURAL PUEDE SER EMPANIZADO POR COSTO EXTRA*",
           "id": "warning-for-all-plates-cualquier-platillo-natural-puede-ser-empanizado-por-costo-extra"
         },
         {
@@ -575,7 +575,7 @@
       "id": "charolas",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "",
           "id": "items-in-section"
         },
         {
@@ -663,7 +663,7 @@
       "id": "arroces-de-la-casa",
       "items": [
         {
-          "name": "ITEMS IN THIS SECTION:",
+          "name": "",
           "id": "items-in-this-section"
         },
         {
@@ -885,7 +885,7 @@
       "id": "sopas",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "",
           "id": "items-in-section"
         },
         {
@@ -907,7 +907,7 @@
       "id": "extras",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "",
           "id": "items-in-section"
         },
         {
@@ -992,7 +992,7 @@
       "id": "postres",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "",
           "id": "items-in-section"
         },
         {
@@ -1023,7 +1023,7 @@
       "id": "bebidas",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "",
           "id": "items-in-section"
         },
         {
