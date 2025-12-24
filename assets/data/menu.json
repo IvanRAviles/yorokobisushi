@@ -9,7 +9,7 @@
         {
           "name": "Dedos De Queso",
           "id": "Dedos De Queso",
-          "warning": "PRECIO VARIA SEGUN PIEZAS ELEJIDAS\nPRICE FOR 1pz: $50\nPRICE FOR 2pzs: $90\nPRICE FOR 3pzs: $130"
+          "warning": "PRECIO VARIA SEGUN PIEZAS ELEJIDAS\nPRECIO POR 1pz: $50\nPRECIO POR 2pzs: $90\nPRECIO POR 3pzs: $130"
         },
         {
           "name": "CHILES CARIBE EMPANIZADOS ACOMPAÑADO CON BOLA DE ARROZ BLANCO",
@@ -71,7 +71,7 @@
         {
           "name": "NIGIRI SUSHI",
           "id": "nigiri-sushi",
-          "warning": "PRECIO VARIA SEGUN PIEZAS QUE ELIJA\nPRICE FOR 2pz:$90\nPRICE FOR 4pz: $130",
+          "warning": "PRECIO VARIA SEGUN PIEZAS QUE ELIJA\nPRECIO POR 2pz:$90\nPRECIO POR 4pz: $130",
           "ingredients": "Proteína a escoger salmón, atún, camarón,\nkanicama, masago y pulpo"
         },
         {
