@@ -117,6 +117,47 @@
   color: var(--muted);
   margin-top: 2px;
 }
+.branches{
+  margin-top:16px;
+  background: rgba(0,0,0,.22);
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+.branches h2{
+  margin:0 0 10px 0;
+  font-size:14px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color: var(--text);
+}
+.branchGrid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:12px;
+}
+.branchCard{
+  background: rgba(0,0,0,.18);
+  border:1px solid var(--line);
+  border-radius: 14px;
+  padding:12px;
+}
+.branchName{
+  font-weight:800;
+  margin:0 0 6px 0;
+}
+.branchMeta{
+  margin:0;
+  color: var(--muted);
+  font-size:13px;
+  line-height:1.35;
+}
+.branchMeta strong{ color: var(--text); font-weight:700; }
+
+@media (max-width: 900px){
+  .branchGrid{ grid-template-columns: 1fr; }
+}
 
   </style>
 </head>
@@ -140,6 +181,29 @@
 <a class="btn secondary" href="https://wa.me/526862098003" target="_blank" rel="noopener">Ordenar por WhatsApp (Carranza)</a>
 <a class="btn secondary" href="https://wa.me/526862220922" target="_blank" rel="noopener">Ordenar por WhatsApp (Anáhuac)</a>
 <a class="btn secondary" href="https://wa.me/526861971397" target="_blank" rel="noopener">Ordenar por WhatsApp (Industrial)</a>
+<section class="branches">
+  <h2>Sucursales</h2>
+
+  <div class="branchGrid">
+    <div class="branchCard">
+      <p class="branchName">Sucursal Carranza</p>
+      <p class="branchMeta"><strong>Dirección:</strong> Río Casas Grandes 2000, Paseos del Sol, Mexicali, B.C.</p>
+      <p class="branchMeta"><strong>Cocina:</strong> 11:00 AM – 10:30 PM</p>
+    </div>
+
+    <div class="branchCard">
+      <p class="branchName">Sucursal Anáhuac</p>
+      <p class="branchMeta"><strong>Dirección:</strong> Calz. Anáhuac 2074, Jardines del Lago, Mexicali, B.C.</p>
+      <p class="branchMeta"><strong>Cocina:</strong> 11:00 AM – 10:30 PM</p>
+    </div>
+
+    <div class="branchCard">
+      <p class="branchName">Sucursal Industrial</p>
+      <p class="branchMeta"><strong>Dirección:</strong> C. F 112, Industrial, Mexicali, B.C.</p>
+      <p class="branchMeta"><strong>Cocina:</strong> 11:00 AM – 10:30 PM</p>
+    </div>
+  </div>
+</section>
 
       </div>
 
@@ -147,6 +211,7 @@
   </div>
 </body>
 </html>
+
 
 
 
