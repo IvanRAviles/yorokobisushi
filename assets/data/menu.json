@@ -358,7 +358,7 @@
       "id": "rollos-empanizados",
       "items": [
         {
-          "name": "ITEMS IN SECTION:",
+          "name": "*CUALQUIER PLATILLO PUEDE HACERSE NATURAL SIN COSTO ADICIONAL.",
           "id": "items-in-section"
         },
         {
@@ -575,7 +575,7 @@
       "id": "charolas",
       "items": [
         {
-          "name": "",
+          "name": "*CHAROLAS DE TERIYAKI O 1/2 CHAROLAS SE PUEDEN HACER EN ARROZ YAKIMESHI POR COSTO EXTRA.*",
           "id": "items-in-section"
         },
         {
