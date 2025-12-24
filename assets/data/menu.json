@@ -105,7 +105,7 @@
       "id": "naturales",
       "items": [
         {
-          "name": "",
+          "name": "*CUALQUIER PLATILLO PUEDE SER EMPANIZADO POR COSTO EXTRA*",
           "id": "items-in-section"
         },
         {
@@ -358,7 +358,7 @@
       "id": "rollos-empanizados",
       "items": [
         {
-          "name": "*CUALQUIER PLATILLO PUEDE HACERSE NATURAL SIN COSTO ADICIONAL.",
+          "name": "*CUALQUIER PLATILLO PUEDE HACERSE NATURAL SIN COSTO ADICIONAL.*",
           "id": "items-in-section"
         },
         {
