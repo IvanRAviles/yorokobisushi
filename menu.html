@@ -504,12 +504,28 @@ Numero telefonico:
 
 
 waBtn.onclick = () => {
+  const chosen = LOCATIONS.find(x => x.id === locSel.value) || LOCATIONS[0];
+  const base = chosen.wa.split("?")[0];
+
+  const pedidoList = ORDER.length ? ("- " + ORDER.join("\n- ")) : "—";
+
+  const msg =
+`Hola, quiero hacer un pedido.
+
+Ingresar Pedido:
+${pedidoList}
+
+Ingresar Nombre:
+Numero telefonico:
+¿Es para recoger o para comer aquí?`;
+
   window.open(
     base + "?text=" + encodeURIComponent(msg),
     "_blank",
     "noopener"
   );
 };
+
 
     }
     locSel.value = LOCATIONS[0].id;
@@ -611,6 +627,7 @@ waBtn.onclick = () => {
 
 </body>
 </html>
+
 
 
 
