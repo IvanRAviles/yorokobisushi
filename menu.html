@@ -493,12 +493,15 @@ document.addEventListener("click", (e) => {
       const base = chosen.wa.split("?")[0];
 
 const msg =
-  "Hola, quiero hacer un pedido.\n" +
-  "Ingresar Pedido:\n" +
-  "Ingresar Nombre:\n" +
-  "Numero telefonico:\n" +
-  "¿Es para recoger o para comer aquí?" +
-  orderText;
+`Hola, quiero hacer un pedido.
+
+Ingresar Pedido:
+${ORDER.length ? ("- " + ORDER.join("\n- ")) : "—"}
+
+Ingresar Nombre:
+Numero telefonico:
+¿Es para recoger o para comer aquí?`;
+
 
 waBtn.onclick = () => {
   window.open(
@@ -608,6 +611,7 @@ waBtn.onclick = () => {
 
 </body>
 </html>
+
 
 
 
