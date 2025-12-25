@@ -400,7 +400,7 @@ const LOCATIONS = [
 
         const priceText =
           it.price ||
-          (it.price_options && it.price_options.length ? "Ver opciones" : "");
+          (it.price_options && it.price_options.length ? "" : "");
 
         div.innerHTML = `
           <div class="itemTop">
@@ -440,6 +440,7 @@ const LOCATIONS = [
 
 </body>
 </html>
+
 
 
 
