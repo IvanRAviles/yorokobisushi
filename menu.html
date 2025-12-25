@@ -578,6 +578,7 @@ waBtn.onclick = () => {
             </div>` : ""
           }
           ${it.warning ? `<div class="warn">${it.warning}</div>` : ""}
+          <button type="button" class="addBtn" data-add="${it.name}">Agregar</button>
         `;
         itemsEl.appendChild(div);
       });
@@ -607,6 +608,7 @@ waBtn.onclick = () => {
 
 </body>
 </html>
+
 
 
 
