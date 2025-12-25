@@ -271,7 +271,30 @@
 .addToOrderBtn:hover{
   background: rgba(255,255,255,.10);
 }
+.addBtn{
+  width:100%;
+  margin-top:10px;
+  padding:12px 14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  font-weight:800;
+  cursor:pointer;
+}
+.addBtn:hover{ background: rgba(255,255,255,.10); }
 
+.orderList{ margin-top:10px; display:flex; flex-direction:column; gap:8px; }
+.orderItem{
+  display:flex; justify-content:space-between; align-items:center; gap:10px;
+  padding:10px 12px; border-radius:14px;
+  background: rgba(0,0,0,.22); border:1px solid var(--line);
+  font-size:14px;
+}
+.orderItem button{
+  border:none; background:transparent; color: var(--muted);
+  cursor:pointer; font-weight:900; font-size:16px;
+}
   </style>
 </head>
 <body>
