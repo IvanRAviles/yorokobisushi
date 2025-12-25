@@ -198,6 +198,79 @@
       box-shadow: 0 10px 22px rgba(179,0,27,.22);
     }
     .small{color:var(--muted); font-size:13px; line-height:1.5}
+/* --- WhatsApp selection (simple) --- */
+.orderSummary {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(0,0,0,.25);
+}
+
+.orderSummary h3{
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.85);
+}
+
+.orderList{
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orderItem{
+  display:flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+.orderItem .left{
+  min-width: 0;
+}
+.orderItem .name{
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+.orderItem .meta{
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.orderItem .removeBtn{
+  flex-shrink:0;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.9);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.addToOrderBtn{
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-weight: 800;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.95);
+  cursor: pointer;
+}
+
+.addToOrderBtn:hover{
+  background: rgba(255,255,255,.10);
+}
 
   </style>
 </head>
@@ -250,6 +323,14 @@
         <div class="small">Selecciona una sucursal para ver el WhatsApp correcto.</div>
         <select id="loc"></select>
         <button class="waBtn" id="wa">Ordenar por WhatsApp</button>
+        <div class="orderSummary" id="orderSummary">
+  <h3>Tu pedido</h3>
+  <ul class="orderList" id="orderList"></ul>
+  <div class="muted" style="margin-top:10px; font-size:12px;">
+    Nota: Si un platillo dice “Precio varía”, elige la proteína/ tamaño en WhatsApp.
+  </div>
+</div>
+
         <div class="small" style="margin-top:10px;">
           * TODO COBRO SERA HECHO EN SUCURSAL AL IR POR SU PEDIDO. EL TOTAL DE SU CUENTA SE CONFIRMARA ATRAVES DE WHATSAPP DESPUES DE HABER MANDADO SU ORDEN A LA SUCURSAL ELEJIDA. * En esta pantalla solamente muestra el menú y manda a WhatsApp de la sucursal que elija. Porfabor asegurar que su mensaje sea enviado a su sucursal mas cercana y de ser explicitos en indicaciones en caso de algun cambio a platillo o cualquier tipo de alergias. Agradecemos su preferencia y comprension, quedamos a sus ordenes!
         </div>
@@ -440,6 +521,7 @@ const LOCATIONS = [
 
 </body>
 </html>
+
 
 
 
