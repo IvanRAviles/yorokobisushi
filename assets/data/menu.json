@@ -258,10 +258,7 @@
       "title": "ROLLOS HORNEADOS",
       "id": "rollos-horneados",
       "items": [
-        {
-          "name": "",
-          "id": "items-in-section"
-        },
+
         {
           "name": "DUQUESA ROLL",
           "id": "duquesa-roll",
@@ -659,10 +656,7 @@
       "title": "ARROCES DE LA CASA",
       "id": "arroces-de-la-casa",
       "items": [
-        {
-          "name": "",
-          "id": "items-in-this-section"
-        },
+
         {
           "name": "BOMBA ESPECIAL",
           "id": "bomba-especial",
@@ -881,10 +875,7 @@
       "title": "SOPAS",
       "id": "sopas",
       "items": [
-        {
-          "name": "",
-          "id": "items-in-section"
-        },
+
         {
           "name": "MISOSHIRO",
           "id": "misoshiro",
@@ -903,10 +894,7 @@
       "title": "EXTRAS",
       "id": "extras",
       "items": [
-        {
-          "name": "",
-          "id": "items-in-section"
-        },
+
         {
           "name": "SUSHIBOLA",
           "id": "sushibola",
@@ -988,10 +976,7 @@
       "title": "POSTRES",
       "id": "postres",
       "items": [
-        {
-          "name": "",
-          "id": "items-in-section"
-        },
+
         {
           "name": "PAY DE QUESO",
           "id": "pay-de-queso",
@@ -1019,10 +1004,7 @@
       "title": "BEBIDAS",
       "id": "bebidas",
       "items": [
-        {
-          "name": "",
-          "id": "items-in-section"
-        },
+
         {
           "name": "TE 500ml",
           "id": "te-500ml",
