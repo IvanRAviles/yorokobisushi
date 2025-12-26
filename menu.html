@@ -295,6 +295,32 @@
   border:none; background:transparent; color: var(--muted);
   cursor:pointer; font-weight:900; font-size:16px;
 }
+    /* --- Customer fields, payment, service --- */
+.custBox{
+  margin-top:12px;
+  padding-top:10px;
+  border-top:1px solid var(--line);
+}
+.custLbl{
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  font-weight:800;
+  margin-bottom:6px;
+}
+.custIn, .selBox{
+  width:100%;
+  padding:12px 14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.02);
+  color:var(--text);
+  outline:none;
+}
+.custIn:focus, .selBox:focus{
+  border-color:rgba(176,30,35,.65);
+}
+
   </style>
 </head>
 <body>
@@ -349,6 +375,28 @@
         <div class="orderSummary" id="orderSummary">
   <h3>Tu pedido</h3>
   <ul class="orderList" id="orderList"></ul>
+          <div class="custBox">
+  <label class="custLbl" for="custName">Nombre</label>
+  <input id="custName" class="custIn" type="text" placeholder="Tu nombre" />
+
+  <label class="custLbl" for="custPhone" style="margin-top:10px;">Teléfono</label>
+  <input id="custPhone" class="custIn" type="tel" inputmode="numeric" placeholder="Ej: 6861234567" />
+
+  <label class="custLbl" for="serviceType" style="margin-top:10px;">Servicio</label>
+  <select id="serviceType" class="selBox">
+    <option value="">Selecciona servicio</option>
+    <option value="Para llevar">Para llevar</option>
+    <option value="Comer aquí">Comer aquí</option>
+  </select>
+
+  <label class="custLbl" for="payMethod" style="margin-top:10px;">Pago</label>
+  <select id="payMethod" class="selBox">
+    <option value="">Selecciona método de pago</option>
+    <option value="Efectivo">Efectivo</option>
+    <option value="Tarjeta">Tarjeta</option>
+  </select>
+</div>
+
   <div class="muted" style="margin-top:10px; font-size:12px;">
     Nota: Si un platillo dice “Precio varía”, elige la proteína/ tamaño en WhatsApp.
   </div>
@@ -369,6 +417,11 @@ const LOCATIONS = [
   { id:'industrial',name:'Sucursal Industrial',wa:"https://wa.me/526861971397?text=Hola%2C%20quiero%20hacer%20un%20pedido.%0AIngresar%20Pedido%3A%0AIngresar%20Nombre%3A%0ANumero%20telefonico%3A%0A%C2%BFEs%20para%20recoger%20o%20para%20comer%20aqu%C3%AD%3F" }
 ];
 let ORDER = [];
+  let CUST_NAME = "";
+let CUST_PHONE = "";
+let PAY_METHOD = "";
+let SERVICE_TYPE = "";
+
 
 function renderOrder(){
   const box = document.getElementById("orderList");
@@ -484,6 +537,38 @@ document.addEventListener("click", (e) => {
       locSel.appendChild(o);
     });
     const waBtn = document.getElementById("wa");
+    const nameIn = document.getElementById("custName");
+const phoneIn = document.getElementById("custPhone");
+const serviceSel = document.getElementById("serviceType");
+const paySel = document.getElementById("payMethod");
+if (nameIn) {
+  nameIn.addEventListener("input", () => {
+    CUST_NAME = nameIn.value.trim();
+    updateWA();
+  });
+}
+
+if (phoneIn) {
+  phoneIn.addEventListener("input", () => {
+    CUST_PHONE = phoneIn.value.trim();
+    updateWA();
+  });
+}
+
+if (serviceSel) {
+  serviceSel.addEventListener("change", () => {
+    SERVICE_TYPE = serviceSel.value;
+    updateWA();
+  });
+}
+
+if (paySel) {
+  paySel.addEventListener("change", () => {
+    PAY_METHOD = paySel.value;
+    updateWA();
+  });
+}
+
     function updateWA(){
       const orderText = ORDER.length
   ? ("\n\nPedido:\n- " + ORDER.join("\n- "))
@@ -509,15 +594,21 @@ waBtn.onclick = () => {
 
   const pedidoList = ORDER.length ? ("- " + ORDER.join("\n- ")) : "—";
 
-  const msg =
+const nombre = CUST_NAME ? CUST_NAME : "";
+const tel = CUST_PHONE ? CUST_PHONE : "";
+const servicio = SERVICE_TYPE ? `\nServicio: ${SERVICE_TYPE}` : "";
+const pago = PAY_METHOD ? `\nPago: ${PAY_METHOD}` : "";
+
+const msg =
 `Hola, quiero hacer un pedido.
 
 Ingresar Pedido:
 ${pedidoList}
 
-Ingresar Nombre:
-Numero telefonico:
-¿Es para recoger o para comer aquí?`;
+Ingresar Nombre: ${nombre}
+Numero telefonico: ${tel}
+¿Es para recoger o para comer aquí?${servicio}${pago}`;
+
 
   window.open(
     base + "?text=" + encodeURIComponent(msg),
@@ -627,6 +718,7 @@ Numero telefonico:
 
 </body>
 </html>
+
 
 
 
