@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yorokobi Sushi — Menú</title>
+  <style>
+    :root{
+      --bg:#0b0b0d;
+      --panel:#121216;
+      --panel2:#16161c;
+      --text:#f3f3f5;
+      --muted:#b8b8c2;
+      --red:#b3001b;
+      --red2:#7a0012;
+      --line:rgba(255,255,255,.08);
+      --shadow: 0 10px 30px rgba(0,0,0,.55);
+      --radius:18px;
+      --radius2:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(900px 400px at 20% 0%, rgba(179,0,27,.18), transparent 55%),
+        radial-gradient(700px 300px at 85% 10%, rgba(179,0,27,.10), transparent 55%),
+        var(--bg);
+      color:var(--text);
+    }
+
+/* --- HEADER (MATCH INDEX) --- */
+.topBar{
+  padding:16px 18px;
+  border-bottom:1px solid var(--line);
+  background: rgba(0,0,0,.22);
+  backdrop-filter: blur(10px);
+}
+
+.brandRow{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logoBox{
+  width:54px;
+  height:54px;
+  border-radius:14px;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  flex:0 0 auto;
+}
+
+.logoBox img{
+  width:46px;
+  height:46px;
+  object-fit:contain;
+  display:block;
+}
+
+.brandText{ display:flex; flex-direction:column; }
+.brandName{ font-size:26px; font-weight:800; line-height:1.1; }
+.brandSub{ margin-top:4px; color:var(--muted); font-size:13px; }
+
+
+
+
+    .brand h1{margin:0; font-size:26px; line-height:1.1}
+    .brand .sub{margin-top:4px; color:var(--muted); font-size:13px}
+
+    .layout{
+      max-width:1200px;
+      margin:0 auto;
+      padding:16px;
+      display:grid;
+      grid-template-columns: 260px 1fr 320px;
+      gap:16px;
+      align-items:start;
+    }
+    @media (max-width: 980px){
+      .layout{grid-template-columns: 1fr; }
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .cardHeader{
+      padding:14px 14px 10px;
+      border-bottom:1px solid var(--line);
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:13px;
+    }
+    .cardBody{padding:12px 14px 14px;}
+
+    /* Sections list */
+    .secBtn{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color:var(--text);
+      cursor:pointer;
+      text-align:left;
+      font-weight:700;
+      margin-bottom:10px;
+    }
+    .secBtn.active{
+      border-color: rgba(179,0,27,.55);
+      background: linear-gradient(180deg, rgba(179,0,27,.18), rgba(0,0,0,.18));
+    }
+
+    /* Menu middle */
+    .search{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color:var(--text);
+      outline:none;
+      margin-bottom:12px;
+    }
+    .gallery{
+      display:flex;
+      gap:10px;
+      overflow:auto;
+      padding-bottom:6px;
+      margin-bottom:12px;
+    }
+    .gallery img{
+      height:92px;
+      width:auto;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background:#0e0e12;
+      flex:0 0 auto;
+    }
+
+    .item{
+      padding:12px 12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.14);
+      border-radius:16px;
+      margin-bottom:12px;
+    }
+    .itemTop{
+      display:flex; justify-content:space-between; gap:12px;
+      align-items:flex-start;
+    }
+    .itemName{font-weight:900; line-height:1.2}
+    .price{font-weight:900; color:#fff; opacity:.95; white-space:nowrap}
+    .meta{color:var(--muted); font-size:13px; line-height:1.45; margin-top:6px}
+    .warn{
+      margin-top:8px;
+      padding:10px 10px;
+      border-radius:14px;
+      border:1px solid rgba(179,0,27,.35);
+      background: rgba(179,0,27,.10);
+      color:#ffd7dd;
+      font-size:13px;
+      white-space:pre-line;
+    }
+
+    /* Right column */
+    select{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color:var(--text);
+      outline:none;
+      margin-top:10px;
+    }
+    .waBtn{
+      width:100%;
+      margin-top:12px;
+      border:none;
+      border-radius:14px;
+      padding:14px 14px;
+      font-size:16px;
+      font-weight:900;
+      color:white;
+      background: linear-gradient(180deg, var(--red), var(--red2));
+      cursor:pointer;
+      box-shadow: 0 10px 22px rgba(179,0,27,.22);
+    }
+    .small{color:var(--muted); font-size:13px; line-height:1.5}
+/* --- WhatsApp selection (simple) --- */
+.orderSummary {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(0,0,0,.25);
+}
+
+.orderSummary h3{
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.85);
+}
+
+.orderList{
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orderItem{
+  display:flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+.orderItem .left{
+  min-width: 0;
+}
+.orderItem .name{
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+.orderItem .meta{
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.orderItem .removeBtn{
+  flex-shrink:0;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.9);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.addToOrderBtn{
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-weight: 800;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.95);
+  cursor: pointer;
+}
+
+.addToOrderBtn:hover{
+  background: rgba(255,255,255,.10);
+}
+.addBtn{
+  width:100%;
+  margin-top:10px;
+  padding:12px 14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  font-weight:800;
+  cursor:pointer;
+}
+.addBtn:hover{ background: rgba(255,255,255,.10); }
+
+.orderList{ margin-top:10px; display:flex; flex-direction:column; gap:8px; }
+.orderItem{
+  display:flex; justify-content:space-between; align-items:center; gap:10px;
+  padding:10px 12px; border-radius:14px;
+  background: rgba(0,0,0,.22); border:1px solid var(--line);
+  font-size:14px;
+}
+.orderItem button{
+  border:none; background:transparent; color: var(--muted);
+  cursor:pointer; font-weight:900; font-size:16px;
+}
+    /* --- Customer fields, payment, service --- */
+.custBox{
+  margin-top:12px;
+  padding-top:10px;
+  border-top:1px solid var(--line);
+}
+.custLbl{
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  font-weight:800;
+  margin-bottom:6px;
+}
+.custIn, .selBox{
+  width:100%;
+  padding:12px 14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.02);
+  color:var(--text);
+  outline:none;
+}
+.custIn:focus, .selBox:focus{
+  border-color:rgba(176,30,35,.65);
+}
+
+  </style>
+</head>
+<body>
+
+<header class="topBar">
+  <div class="brandRow">
+    <div class="logoBox">
+      <img src="assets/logo-mark.png" alt="Yorokobi Sushi">
+    </div>
+    <div class="brandText">
+      <div class="brandName">Yorokobi Sushi</div>
+      <div class="brandSub">Desde 2017</div>
+    </div>
+  </div>
+</header>
+
+
+
+
+    </div>
+
+    </div>
+  </div>
+
+  <div class="layout">
+    <!-- Left: sections -->
+    <div class="card">
+      <div class="cardHeader">Secciones</div>
+      <div class="cardBody" id="sections"></div>
+    </div>
+
+    <!-- Middle: menu -->
+    <div class="card">
+      <div class="cardHeader">Menú</div>
+      <div class="cardBody">
+        <input id="search" class="search" placeholder="Buscar en esta sección..." />
+        <div id="gallery" class="gallery" aria-label="Galería"></div>
+        <div id="items"></div>
+        <div id="empty" class="small" style="display:none; padding-top:6px;">
+          No se encontraron resultados.
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: locations -->
+    <div class="card">
+      <div class="cardHeader">Sucursales</div>
+      <div class="cardBody">
+        <div class="small">Selecciona una sucursal para ver el WhatsApp correcto.</div>
+        <select id="loc"></select>
+        <button class="waBtn" id="wa">Ordenar por WhatsApp</button>
+        <div class="orderSummary" id="orderSummary">
+  <h3>Tu pedido</h3>
+  <ul class="orderList" id="orderList"></ul>
+          <div class="custBox">
+  <label class="custLbl" for="custName">Nombre</label>
+  <input id="custName" class="custIn" type="text" placeholder="Tu nombre" />
+
+  <label class="custLbl" for="custPhone" style="margin-top:10px;">Teléfono</label>
+  <input id="custPhone" class="custIn" type="tel" inputmode="numeric" placeholder="Ej: 6861234567" />
+
+  <label class="custLbl" for="serviceType" style="margin-top:10px;">Servicio</label>
+  <select id="serviceType" class="selBox">
+    <option value="">Selecciona servicio</option>
+    <option value="Para llevar">Para llevar</option>
+    <option value="Comer aquí">Comer aquí</option>
+  </select>
+
+  <label class="custLbl" for="payMethod" style="margin-top:10px;">Pago</label>
+  <select id="payMethod" class="selBox">
+    <option value="">Selecciona método de pago</option>
+    <option value="Efectivo">Efectivo</option>
+    <option value="Tarjeta">Tarjeta</option>
+  </select>
+</div>
+
+  <div class="muted" style="margin-top:10px; font-size:12px;">
+    Nota: Si un platillo dice “Precio varía”, elige la proteína/ tamaño en WhatsApp.
+  </div>
+</div>
+
+        <div class="small" style="margin-top:10px;">
+          * TODO COBRO SERA HECHO EN SUCURSAL AL IR POR SU PEDIDO. EL TOTAL DE SU CUENTA SE CONFIRMARA ATRAVES DE WHATSAPP DESPUES DE HABER MANDADO SU ORDEN A LA SUCURSAL ELEJIDA. * Porfabor asegurar que su mensaje sea enviado a su sucursal mas cercana y de ser explicitos en indicaciones en caso de algun cambio a platillo o cualquier tipo de alergias. Agradecemos su preferencia y comprension, quedamos a sus ordenes!
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  // 1) Put your real WhatsApp links here (we’ll set them next)
+const LOCATIONS = [
+  { id:'carranza', name:'Sucursal Carranza', wa:"https://wa.me/526862098003?text=Hola%2C%20quiero%20hacer%20un%20pedido.%0AIngresar%20Pedido%3A%0AIngresar%20Nombre%3A%0ANumero%20telefonico%3A%0A%C2%BFEs%20para%20recoger%20o%20para%20comer%20aqu%C3%AD%3F" },
+  { id:'anahuac',  name:'Sucursal Anáhuac',  wa:"https://wa.me/526862220922?text=Hola%2C%20quiero%20hacer%20un%20pedido.%0AIngresar%20Pedido%3A%0AIngresar%20Nombre%3A%0ANumero%20telefonico%3A%0A%C2%BFEs%20para%20recoger%20o%20para%20comer%20aqu%C3%AD%3F" },
+  { id:'industrial',name:'Sucursal Industrial',wa:"https://wa.me/526861971397?text=Hola%2C%20quiero%20hacer%20un%20pedido.%0AIngresar%20Pedido%3A%0AIngresar%20Nombre%3A%0ANumero%20telefonico%3A%0A%C2%BFEs%20para%20recoger%20o%20para%20comer%20aqu%C3%AD%3F" }
+];
+let ORDER = [];
+  let CUST_NAME = "";
+let CUST_PHONE = "";
+let PAY_METHOD = "";
+let SERVICE_TYPE = "";
+
+
+function renderOrder(){
+  const box = document.getElementById("orderList");
+  if(!box) return;
+
+  if(ORDER.length === 0){
+    box.innerHTML = `<div style="color:var(--muted);font-size:12px;">Aún no has agregado productos.</div>`;
+    return;
+  }
+
+  box.innerHTML = ORDER.map((name, idx) => `
+    <div class="orderItem">
+      <div>${name}</div>
+      <button type="button" data-remove="${idx}">×</button>
+    </div>
+  `).join("");
+}
+
+function addToOrder(name){
+  ORDER.push(name);
+  renderOrder();
+  updateWA();
+}
+
+document.addEventListener("click", (e) => {
+  const addBtn = e.target.closest("[data-add]");
+  if(addBtn){
+    addToOrder(addBtn.getAttribute("data-add"));
+    return;
+  }
+  const rmBtn = e.target.closest("[data-remove]");
+  if(rmBtn){
+    const idx = Number(rmBtn.getAttribute("data-remove"));
+    ORDER.splice(idx, 1);
+    renderOrder();
+    updateWA();
+  }
+});
+
+
+
+  // 2) Section-to-images folder mapping (based on your folder names)
+  const IMAGE_FOLDERS = {
+    "ARROCES DE LA CASA": "ARROCES",
+    "CHAROLAS": "CHAROLAS",
+    "ROLLOS EMPANIZADOS": "EMPANIZADOS",
+    "ENTRADAS": "ENTRADAS",
+    "ESPECIALIDADES DE LA CASA": "ESPECIALIDADES DE LA CASA",
+    "ROLLOS HORNEADOS": "HORNEADOS",
+    "MARISCOS": "MARISCOS",
+    "NATURALES": "NATURALES",
+    "TERIYAKI": "TERIYAKI",
+  };
+
+  // Auto-load sequential images like: FOLDER-1.JPG, FOLDER-2.JPG ... (stops after misses)
+  async function loadGallery(sectionTitle){
+    const el = document.getElementById("gallery");
+    el.innerHTML = "";
+
+    const folder = IMAGE_FOLDERS[sectionTitle];
+    if(!folder) return;
+
+    // build the base prefix exactly like your filenames, e.g. ARROCES-DE-LA-CASA-
+    // We’ll try to match the folder name style when possible:
+    const prefixMap = {
+      "ARROCES": "ARROCES-DE-LA-CASA-",
+      "CHAROLAS": "CHAROLAS-",
+      "EMPANIZADOS": "ROLLOS-EMPANIZADOS-",
+      "ENTRADAS": "ENTRADAS-",
+      "ESPECIALIDADES DE LA CASA": "ESPECIALIDADES-DE-LA-CASA-",
+      "HORNEADOS": "ROLLOS-HORNEADOS-",
+      "MARISCOS": "MARISCOS-",
+      "NATURALES": "NATURALES-",
+      "TERIYAKI": "TERIYAKI-",
+    };
+    const prefix = prefixMap[folder];
+    if(!prefix) return;
+
+    let misses = 0;
+    for(let i=1; i<=30; i++){
+      const src = `assets/images/${folder}/${prefix}${i}.JPG`;
+      const ok = await new Promise(res=>{
+        const img = new Image();
+        img.onload = () => res(true);
+        img.onerror = () => res(false);
+        img.src = src;
+      });
+      if(!ok){
+        misses++;
+        if(misses >= 3) break; // stop after 3 missing images in a row
+        continue;
+      }
+      misses = 0;
+      const imgEl = document.createElement("img");
+      imgEl.src = src;
+      imgEl.alt = sectionTitle;
+      el.appendChild(imgEl);
+    }
+  }
+
+  function slug(s){
+    return (s||"").toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+      .replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
+  }
+
+  async function main(){
+    // Locations
+    const locSel = document.getElementById("loc");
+    LOCATIONS.forEach(l=>{
+      const o=document.createElement("option");
+      o.value=l.id; o.textContent=l.name;
+      locSel.appendChild(o);
+    });
+    const waBtn = document.getElementById("wa");
+    const nameIn = document.getElementById("custName");
+const phoneIn = document.getElementById("custPhone");
+const serviceSel = document.getElementById("serviceType");
+const paySel = document.getElementById("payMethod");
+if (nameIn) {
+  nameIn.addEventListener("input", () => {
+    CUST_NAME = nameIn.value.trim();
+    updateWA();
+  });
+}
+
+if (phoneIn) {
+  phoneIn.addEventListener("input", () => {
+    CUST_PHONE = phoneIn.value.trim();
+    updateWA();
+  });
+}
+
+if (serviceSel) {
+  serviceSel.addEventListener("change", () => {
+    SERVICE_TYPE = serviceSel.value;
+    updateWA();
+  });
+}
+
+if (paySel) {
+  paySel.addEventListener("change", () => {
+    PAY_METHOD = paySel.value;
+    updateWA();
+  });
+}
+
+    function updateWA(){
+      const orderText = ORDER.length
+  ? ("\n\nPedido:\n- " + ORDER.join("\n- "))
+  : "";
+
+      const chosen = LOCATIONS.find(x=>x.id===locSel.value) || LOCATIONS[0];
+      const base = chosen.wa.split("?")[0];
+
+const msg =
+`Hola, quiero hacer un pedido.
+
+Ingresar Pedido:
+${ORDER.length ? ("- " + ORDER.join("\n- ")) : "—"}
+
+Ingresar Nombre:
+Numero telefonico:
+¿Es para recoger o para comer aquí?`;
+
+
+waBtn.onclick = () => {
+  const chosen = LOCATIONS.find(x => x.id === locSel.value) || LOCATIONS[0];
+  const base = chosen.wa.split("?")[0];
+
+  const pedidoList = ORDER.length ? ("- " + ORDER.join("\n- ")) : "—";
+
+const nombre = CUST_NAME ? CUST_NAME : "";
+const tel = CUST_PHONE ? CUST_PHONE : "";
+const servicio = SERVICE_TYPE ? `\nServicio: ${SERVICE_TYPE}` : "";
+const pago = PAY_METHOD ? `\nPago: ${PAY_METHOD}` : "";
+
+const msg =
+`Hola, quiero hacer un pedido.
+
+Ingresar Pedido:
+${pedidoList}
+
+Ingresar Nombre: ${nombre}
+Numero telefonico: ${tel}
+¿Es para recoger o para comer aquí?${servicio}${pago}`;
+
+
+  window.open(
+    base + "?text=" + encodeURIComponent(msg),
+    "_blank",
+    "noopener"
+  );
+};
+
+
+    }
+    locSel.value = LOCATIONS[0].id;
+    updateWA();
+    locSel.addEventListener("change", updateWA);
+
+    // Load menu.json
+    const res = await fetch("assets/data/menu.json", { cache:"no-store" });
+    const data = await res.json();
+
+    // Expect: { "sections": [ { "title": "...", "items": [...] }, ... ] }
+    const sections = (data.sections || []).map(s => ({
+      title: s.title,
+      items: s.items || []
+    }));
+
+    // Render sections
+    const secEl = document.getElementById("sections");
+    secEl.innerHTML = "";
+    sections.forEach((s, idx)=>{
+      const b=document.createElement("button");
+      b.className="secBtn" + (idx===0 ? " active":"");
+      b.textContent = s.title;
+      b.onclick=()=>{
+        document.querySelectorAll(".secBtn").forEach(x=>x.classList.remove("active"));
+        b.classList.add("active");
+        selectSection(s.title);
+      };
+      secEl.appendChild(b);
+    });
+
+    const search = document.getElementById("search");
+    const itemsEl = document.getElementById("items");
+    const emptyEl = document.getElementById("empty");
+    let currentTitle = sections[0]?.title || "";
+
+    function render(){
+      const q = (search.value||"").trim().toLowerCase();
+      const sec = sections.find(x=>x.title===currentTitle);
+      const list = (sec?.items || []).filter(it=>{
+        const hay = [
+          it.name, it.ingredients, it.warning,
+          (it.price||""),
+          ...(it.price_options||[]).map(p=>`${p.label} ${p.price}`)
+        ].join(" ").toLowerCase();
+        return !q || hay.includes(q);
+      });
+
+      itemsEl.innerHTML = "";
+      emptyEl.style.display = list.length ? "none" : "block";
+
+      list.forEach(it=>{
+        const div=document.createElement("div");
+        div.className="item";
+
+        const priceText =
+          it.price ||
+          (it.price_options && it.price_options.length ? "" : "");
+
+        div.innerHTML = `
+          <div class="itemTop">
+            <div class="itemName">${it.name || ""}</div>
+            <div class="price">${priceText}</div>
+          </div>
+          ${it.ingredients ? `<div class="meta"><b>Ingredientes:</b> ${it.ingredients}</div>` : ""}
+          ${(it.price_options && it.price_options.length) ? `
+            <div class="meta"><b>Opciones:</b><br>
+              ${it.price_options.map(p=>`• ${p.label}: <b>${p.price}</b>`).join("<br>")}
+            </div>` : ""
+          }
+          ${it.warning ? `<div class="warn">${it.warning}</div>` : ""}
+          <button type="button" class="addBtn" data-add="${it.name}">Agregar</button>
+        `;
+        itemsEl.appendChild(div);
+      });
+    }
+
+    async function selectSection(title){
+      currentTitle = title;
+      search.value = "";
+      await loadGallery(title);
+      render();
+    }
+
+    search.addEventListener("input", render);
+
+    // Initial
+    await selectSection(currentTitle);
+  }
+
+  main().catch(err=>{
+    console.error(err);
+    alert("Error cargando el menú. Revisa que assets/data/menu.json exista.");
+    
+    renderOrder();
+
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
