@@ -531,6 +531,9 @@ document.addEventListener("click", (e) => {
   async function main(){
     // Locations
     const locSel = document.getElementById("loc");
+    const params = new URLSearchParams(window.location.search);
+const mode = params.get("mode");          // "view" or null
+const presetLoc = params.get("loc");      // "carranza" / "anahuac" / "industrial" or null
     LOCATIONS.forEach(l=>{
       const o=document.createElement("option");
       o.value=l.id; o.textContent=l.name;
@@ -619,7 +622,11 @@ Numero telefonico: ${tel}
 
 
     }
-    locSel.value = LOCATIONS[0].id;
+    if (presetLoc && LOCATIONS.some(x => x.id === presetLoc)) {
+  locSel.value = presetLoc;
+} else {
+  locSel.value = LOCATIONS[0].id;
+}
     updateWA();
     locSel.addEventListener("change", updateWA);
 
@@ -688,7 +695,7 @@ Numero telefonico: ${tel}
             </div>` : ""
           }
           ${it.warning ? `<div class="warn">${it.warning}</div>` : ""}
-          <button type="button" class="addBtn" data-add="${it.name}">Agregar</button>
+          ${mode === "view" ? "" : `<button type="button" class="addBtn" data-add="${it.name}">Agregar</button>`}
         `;
         itemsEl.appendChild(div);
       });
@@ -712,12 +719,29 @@ Numero telefonico: ${tel}
     alert("Error cargando el menú. Revisa que assets/data/menu.json exista.");
     
     renderOrder();
+    if (mode === "view") {
+  // Hide WhatsApp ordering button
+  const wa = document.getElementById("wa");
+  if (wa) wa.style.display = "none";
+
+  // Hide order list + customer fields container
+  const orderList = document.getElementById("orderList");
+  if (orderList) orderList.style.display = "none";
+
+  const custName = document.getElementById("custName");
+  if (custName) custName.closest(".custBox")?.style && (custName.closest(".custBox").style.display = "none");
+
+  // Hide all "Agregar" buttons (if already rendered)
+  document.querySelectorAll(".addBtn").forEach(b => b.style.display = "none");
+}
+
 
   });
 </script>
 
 </body>
 </html>
+
 
 
 
