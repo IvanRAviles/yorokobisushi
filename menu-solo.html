@@ -607,8 +607,15 @@ Numero telefonico: ${tel}
     locSel.addEventListener("change", updateWA);
 
     // Load menu.json
-    const res = await fetch('/assets/data/menu.json?v=solo1', { cache: 'no-store' });
-    const data = await res.json();
+const url = '/assets/data/menu.json?v=solo1';
+const res = await fetch(url, { cache: 'no-store' });
+
+if (!res.ok) {
+  throw new Error(`Fetch fallo: ${res.status} ${res.statusText} en ${url}`);
+}
+
+const data = await res.json();
+
 
     // Expect: { "sections": [ { "title": "...", "items": [...] }, ... ] }
     const sections = (data.sections || []).map(s => ({
@@ -690,9 +697,13 @@ Numero telefonico: ${tel}
     await selectSection(currentTitle);
   }
 
-  main().catch(err=>{
-    console.error(err);
-    alert("Error cargando el menú. Revisa que assets/data/menu.json exista.");
+main().catch(err => {
+  console.error(err);
+  alert(
+    "Error real:\n" +
+    (err && err.message ? err.message : String(err))
+  );
+});
     
     renderOrder();
     if (mode === "view") {
