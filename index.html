@@ -1,229 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yorokobi Sushi</title>
-  <style>
-    :root{
-      --bg:#0b0b0d;
-      --panel:#121216;
-      --panel2:#16161c;
-      --text:#f3f3f5;
-      --muted:#b8b8c2;
-      --red:#b3001b;
-      --red2:#7a0012;
-      --line:rgba(255,255,255,.08);
-      --shadow: 0 10px 30px rgba(0,0,0,.55);
-      --radius:18px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(900px 400px at 20% 0%, rgba(179,0,27,.18), transparent 55%),
-        radial-gradient(700px 300px at 85% 10%, rgba(179,0,27,.10), transparent 55%),
-        var(--bg);
-      color:var(--text);
-    }
-    .wrap{max-width:1100px; margin:0 auto; padding:20px 16px 40px;}
-    header{
-      display:flex; align-items:center; gap:14px;
-      padding:14px 16px;
-      border-bottom:1px solid var(--line);
-    }
-    .logoBox{
-      width:54px; height:54px; border-radius:14px;
-      background:#ffffff;
-      display:flex; align-items:center; justify-content:center;
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .logoBox img{width:46px; height:46px; object-fit:contain}
-    .brand h1{margin:0; font-size:26px; line-height:1.1}
-    .brand .sub{margin-top:4px; color:var(--muted); font-size:13px}
-    .hero{
-      margin-top:18px;
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding:18px;
-    }
-    .ctaRow{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:12px;
-      margin-top:14px;
-    }
-    .btn{
-      width:100%;
-      border:none;
-      border-radius:14px;
-      padding:16px 16px;
-      font-size:16px;
-      font-weight:700;
-      color:white;
-      background: linear-gradient(180deg, var(--red), var(--red2));
-      cursor:pointer;
-      box-shadow: 0 10px 22px rgba(179,0,27,.22);
-      text-decoration:none;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-    }
-    .btn:active{transform:translateY(1px)}
-    .btn.secondary{
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      border:1px solid var(--line);
-      box-shadow:none;
-      color:var(--text);
-    }
-    .note{color:var(--muted); font-size:13px; margin-top:10px; line-height:1.5}
-    .topBar {
-  display: flex;
-  align-items: center;
-  padding: 18px 22px;
-}
-
-.brandRow {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.logoMark {
-  width: 46px;
-  height: 46px;
-  display: block;
-}
-
-.brandText {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.brandName {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-}
-
-.brandSub {
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 2px;
-}
-.branches{
-  margin-top:16px;
-  background: rgba(0,0,0,.22);
-  border:1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 14px;
-}
-.branches h2{
-  margin:0 0 10px 0;
-  font-size:14px;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color: var(--text);
-}
-.branchGrid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap:12px;
-}
-.branchCard{
-  background: rgba(0,0,0,.18);
-  border:1px solid var(--line);
-  border-radius: 14px;
-  padding:12px;
-}
-.branchName{
-  font-weight:800;
-  margin:0 0 6px 0;
-}
-.branchMeta{
-  margin:0;
-  color: var(--muted);
-  font-size:13px;
-  line-height:1.35;
-}
-.branchMeta strong{ color: var(--text); font-weight:700; }
-
-@media (max-width: 900px){
-  .branchGrid{ grid-template-columns: 1fr; }
-}
-
-  </style>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div class="wrap">
-    <header class="topBar">
-  <div class="brandRow">
-    <img class="logoMark" src="assets/logo-mark.png" alt="Yorokobi Sushi">
-    <div class="brandText">
-      <div class="brandName">Yorokobi Sushi</div>
-      <div class="brandSub">Desde 2017</div>
-    </div>
-  </div>
+
+<header class="top">
+  <img src="assets/logo.png" alt="Yorokobi Sushi"/>
+  <h1>Yorokobi Sushi</h1>
+  <p>Desde 2017</p>
 </header>
 
+<main class="container">
 
-    <div class="hero">
-      <div style="text-align:center;">
-  <a class="btn" href="/menu-solo.html">Ver Menú</a>
-  <div class="small" style="margin-top:6px; opacity:0.8;">
-    * Solo menú (no pedidos)
-  </div>
-</div>
+  <a class="mainBtn" href="/menu-solo.html">
+    Ver menú <span class="small">(solo menú)</span>
+  </a>
 
-      <div class="ctaRow">
-<a class="btn secondary" href="menu.html?loc=carranza">Ordenar por WhatsApp (Carranza)</a>
-<a class="btn secondary" href="menu.html?loc=anahuac">Ordenar por WhatsApp (Anáhuac)</a>
-<a class="btn secondary" href="menu.html?loc=industrial">Ordenar por WhatsApp (Industrial)</a>
-<section class="branches">
-  <h2>Sucursales</h2>
+  <a class="mainBtn dark" href="/menu.html?loc=carranza">
+    Ordenar por WhatsApp (Carranza)
+  </a>
 
-  <div class="branchGrid">
-    <div class="branchCard">
-      <p class="branchName">Sucursal Carranza</p>
-      <p class="branchMeta"><strong>Dirección:</strong> Río Casas Grandes 2000, Paseos del Sol, Mexicali, B.C.</p>
-      <p class="branchMeta"><strong>Cocina:</strong> 11:00 AM – 10:30 PM</p>
-    </div>
+  <a class="mainBtn dark" href="/menu.html?loc=anahuac">
+    Ordenar por WhatsApp (Anáhuac)
+  </a>
 
-    <div class="branchCard">
-      <p class="branchName">Sucursal Anáhuac</p>
-      <p class="branchMeta"><strong>Dirección:</strong> Calz. Anáhuac 2074, Jardines del Lago, Mexicali, B.C.</p>
-      <p class="branchMeta"><strong>Cocina:</strong> 11:00 AM – 10:30 PM</p>
-    </div>
+  <a class="mainBtn dark" href="/menu.html?loc=industrial">
+    Ordenar por WhatsApp (Industrial)
+  </a>
 
-    <div class="branchCard">
-      <p class="branchName">Sucursal Industrial</p>
-      <p class="branchMeta"><strong>Dirección:</strong> C. F 112, Industrial, Mexicali, B.C.</p>
-      <p class="branchMeta"><strong>Cocina:</strong> 11:00 AM – 10:30 PM</p>
-    </div>
-  </div>
-</section>
+</main>
 
-      </div>
-
-    </div>
-  </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
