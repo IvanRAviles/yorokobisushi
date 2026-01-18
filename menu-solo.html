@@ -607,7 +607,7 @@ Numero telefonico: ${tel}
     locSel.addEventListener("change", updateWA);
 
     // Load menu.json
-    const res = await fetch('/assets/data/menu.json?v=20260118', { cache: 'no-store' });
+    const res = await fetch('/assets/data/menu.json?v=menu-solo-1', { cache: 'no-store' });
     const data = await res.json();
 
     // Expect: { "sections": [ { "title": "...", "items": [...] }, ... ] }
