@@ -333,7 +333,7 @@ body.solo-menu .muted {
 <header class="topBar">
   <div class="brandRow">
     <div class="logoBox">
-      <img src="assets/logo-mark.png" alt="Yorokobi Sushi">
+      <img src="/assets/logo-mark.png" alt="Yorokobi Sushi">
     </div>
     <div class="brandText">
       <div class="brandName">Yorokobi Sushi</div>
@@ -478,7 +478,7 @@ document.addEventListener("click", (e) => {
 
     let misses = 0;
     for(let i=1; i<=30; i++){
-      const src = `assets/images/${folder}/${prefix}${i}.JPG`;
+      const src = `/assets/images/${folder}/${prefix}${i}.JPG`;
       const ok = await new Promise(res=>{
         const img = new Image();
         img.onload = () => res(true);
@@ -607,7 +607,7 @@ Numero telefonico: ${tel}
     locSel.addEventListener("change", updateWA);
 
     // Load menu.json
-    const res = await fetch("assets/data/menu.json", { cache:"no-store" });
+    const res = await fetch('/assets/data/menu.json', { cache: "no-store" });
     const data = await res.json();
 
     // Expect: { "sections": [ { "title": "...", "items": [...] }, ... ] }
